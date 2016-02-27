@@ -1,0 +1,23 @@
+{
+  "name": "gncd",
+  "version": "1.0.0",
+  "description": "Github-Node Continuous Deployer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackhydrogen/GNCD.git"
+  },
+  "author": "Ian L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackhydrogen/GNCD/issues"
+  },
+  "homepage": "https://github.com/blackhydrogen/GNCD#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
