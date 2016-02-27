@@ -9,7 +9,7 @@ var httpPort = 23444;
 // parse application/json
 app.use(bodyParser.json());
 
-app.get("/hooked", function(req, res) {
+app.post("/hooked", function(req, res) {
 	console.log(req.body);
 	res.end("OK");
 });
