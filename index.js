@@ -13,18 +13,30 @@ app.use(bodyParser.json());
 
 app.post("/hooked", function(req, res) {
 	console.log("==================== HOOKED ====================")
+	console.log();
 	console.log(req.body);
+	console.log();
 	
 	console.log("Executing shell script...");
+	console.log();
 	
-	exec("./onhook_run.sh" + req.params.movie,
+	exec("./onhook_run.sh",
 	function (error, stdout, stderr) {
-		console.log("stdout: " + stdout);
-		console.log("stderr: " + stderr);
-		if (error !== null)
-			console.log("exec error: " + error);
+		console.log("=== stdout ===");
+		console.log(stdout);
+		console.log();
+		console.log("=== stderr ===");
+		console.log(stderr);
+		console.log();
+		if (error !== null) {
+			console.log("=== exec error ===")
+			console.log(error);
+			console.log();
+		}
 		
 		console.log("Shell script done.");
+		console.log();
+		console.log();
 		console.log();
 		console.log();
 	});
