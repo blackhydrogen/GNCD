@@ -3,5 +3,5 @@ cd ~/GNCD-pulled-repo
 
 git pull
 npm install
-screen -S gncd-pull-repo -X quit
-screen -S gncd-pull-repo -L -d -m node .
+screen -S gncd-pulled-repo -X quit
+screen -S gncd-pulled-repo -L -d -m 0 node .
