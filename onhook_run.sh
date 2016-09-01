@@ -1,7 +1,7 @@
 #!/bin/bash
-cd ~/GNCD-pulled-repo
+cd ~/personalsite
 
 git pull
 npm install
-screen -S gncd-pulled-repo -X quit
-screen -S gncd-pulled-repo -L -d -m 0 node .
+screen -S personalsite -X quit
+screen -S personalsite -L -d -m node .
